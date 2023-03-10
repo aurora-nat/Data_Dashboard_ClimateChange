@@ -51,7 +51,7 @@ def create_plotlist(df):
             go.Scatter(
                 x= x_val,
                 y = y_val,
-                mode = 'lines',
+                mode = 'markers',
                 name = country
             )
         )
@@ -100,7 +100,6 @@ def return_figures():
     df_three = cleandata('data/graph_three.csv')
     #Prepare data for go:
     graph_three = create_plotlist(df_three)
-    
     #Create our layout:
     layout_three = dict(title="Forest Area (percent of land area)",
                       xaxis=dict(title='Country'), 
@@ -127,5 +126,5 @@ def return_figures():
     figures.append(dict(data=graph_three, layout=layout_three))
     figures.append(dict(data=graph_four, layout=layout_four))
   
-
+    print(figures[2], figures[3])
     return figures
