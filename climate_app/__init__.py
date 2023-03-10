@@ -1,5 +1,5 @@
 from flask import Flask
 
-app = Flask(_name_)
+app = Flask(__name__)
 
-from myapp import routes
+from climate_app import routes
