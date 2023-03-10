@@ -111,10 +111,8 @@
         // plots the figure with id
         // id much match the div id above in the html
         
-        var figures = "{{figuresJSON }}";
-        var ids = "{{ids}}";
-        console.log("I am printing ids:", ids)
-        console.log("I am printing figures:", figures)
+        var figures = {{figuresJSON | safe}};
+        var ids = {{ids | safe }};
         for(var i in figures) {
             Plotly.plot(ids[i],
                 figures[i].data,
