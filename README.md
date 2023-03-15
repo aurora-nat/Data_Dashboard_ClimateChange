@@ -19,6 +19,10 @@
 
     The original data dashboard project was built using Flask alone. But to allow visualizations to be viewed online, we have used Heroku to deploy the web application online. Heroku allows applications for many programming languages to be used, like Python, for more information: https://devcenter.heroku.com/
 
+## Heroku Web App Can be Viewed:
+https://climatedashboardapp.herokuapp.com/
+
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
