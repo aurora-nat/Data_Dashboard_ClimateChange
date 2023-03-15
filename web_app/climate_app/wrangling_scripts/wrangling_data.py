@@ -126,5 +126,5 @@ def return_figures():
     figures.append(dict(data=graph_three, layout=layout_three))
     figures.append(dict(data=graph_four, layout=layout_four))
   
-    print(figures[2], figures[3])
+
     return figures
